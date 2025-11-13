@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BACKEND_URL = axios.create({
-  baseURL: "https://note-taking-app-website-frontend-new.onrender.com"
+  baseURL: "https://note-taking-app-website-frontend-latest.onrender.com"
 })
 
 export default BACKEND_URL
