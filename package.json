@@ -1,0 +1,21 @@
+{
+  "name": "note-taking-app",
+  "version": "1.0.0",
+  "description": "MERN Stack Note Taking Application - Serverless on Vercel",
+  "type": "module",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install": "npm run install:backend && npm run install:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:frontend",
+    "dev:backend": "cd backend && nodemon index.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "cd backend && node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Anamitra",
+  "license": "ISC"
+}
