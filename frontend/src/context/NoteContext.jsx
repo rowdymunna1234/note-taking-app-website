@@ -26,8 +26,8 @@ useEffect(() => {
 
 // create a note
 const createNote = async (note) => {
-    const response = await BACKEND_URL.post("/create-note", note);
-    setNotes([response.data, ...notes])
+    await BACKEND_URL.post("/create-note", note);
+    await getNotes();
 }
 
 // update a note
